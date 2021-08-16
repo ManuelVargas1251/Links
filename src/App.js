@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Button from './components/Button.js';
 
 function App() {
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <header>
         <p>
-          From <code>src/App.js</code> and save to reload.
+          MNL SPACE
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          This is a React app
-        </a>
       </header>
+      <div>
+        <Button link="https://www.youtube.com/" title="Music - Youtube" />
+        <Button link="https://www.instagram.com/" title="Music Merch - Instagram" />
+        <Button link="" title="Music Merch - Website" />
+        <Button link="" title="Hello:)" />
+      </div>
     </div>
   );
 }
